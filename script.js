@@ -7,7 +7,9 @@ let quoteButton = document.getElementById('quote-button');
 quoteButton.addEventListener('click', populateQuote);
 
 function populateQuote() {
-    fetch('https://api.adviceslip.com/advice')
+    const url = 'https://api.adviceslip.com/advice'
+
+    fetch(url)
 
     .then(response => {
         return response.json()
