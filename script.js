@@ -1,4 +1,4 @@
-windows.onload = populateQuote()
+window.onload = populateQuote();
 
 let quoteNumber = document.getElementById('quote-num');
 let quoteText = document.getElementById('quote');
@@ -19,4 +19,4 @@ function populateQuote() {
         quoteNumber.innerHTML = name.id
         quoteText.innerHTML = name.advice
     })
-}
+};
